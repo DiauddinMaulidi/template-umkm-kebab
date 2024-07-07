@@ -13,7 +13,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .nav-item-bg {
-  background-color: #af47d2;
+  background-color: #ffdb00;
 }
 .wrapper {
   align-items: center;
@@ -30,7 +30,7 @@ body {
 .imageBg .image {
   width: 100%;
   height: 100%;
-  background-image: url(./img/kebab_shop1.jpg);
+  background-image: url(./img/kebab2.jpg);
   background-size: cover;
   animation: zoom-in-zoom-out 40s ease forwards;
 }
@@ -56,7 +56,8 @@ body {
 .text p span {
   color: #ffdb00;
   padding: 0 1px;
-  margin: 0 5px;
+  margin-top: -5px;
+  margin-right: 3px;
   font-weight: bold;
 
   font-size: 48px;

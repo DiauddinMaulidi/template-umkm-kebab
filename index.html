@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Toko Kebab</title>
+    <link rel="icon" type="image/png" href="./img/icon-removebg.png" />
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -12,12 +13,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- awal navbar -->
     <nav class="navbar navbar-expand-lg sticky-top" id="bgNavbar">
       <div class="container-fluid">
-        <a class="navbar-brand judul-position fs-3" href="">Kebab Golden</a>
+        <a class="navbar-brand judul-position fs-3" href="">
+          <img src="./img/icon-removebg.png" alt="logo" width="40px" />
+          Kebab Golden</a
+        >
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,14 +32,18 @@
             <li class="nav-item me-4">
               <a class="nav-link" aria-current="page" href="#homepage">HOME</a>
             </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#about">ABOUT</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+              <ul class="mt-1" id="submenu">
+                <li><a class="dropdown-item fs-6" href="#sejarah">Sejarah</a></li>
+                <li><a class="dropdown-item fs-6" href="#visiMisi">Visi & Misi</a></li>
+              </ul>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#">PRODUCT</a>
+              <a class="nav-link" href="#product">PRODUCT</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#">KONTAK</a>
+              <a class="nav-link" href="#kontak">KONTAK</a>
             </li>
           </ul>
         </div>
@@ -53,35 +63,182 @@
     </section>
     <!-- akhir homepage -->
 
-    <!-- awal about -->
-    <section class="about" id="about">
-      <h2 class="text-center mb-5">Tentang Kebab Golden</h2>
+    <!-- awal about sejarah -->
+    <section class="about mb-5" id="sejarah">
+      <h2 class="text-center mb-5">Sejarah Kebab Golden</h2>
       <article class="container">
         <div class="text rataTengah d-flex gap-4 mb-5">
-          <img src="./img/kebab_shop1.jpg" class="w-50 rounded-3" alt="kebab shop1" />
+          <img src="./img/kebab_shop1.jpg" class="rounded-3 ms-4" width="40%" alt="kebab shop1" />
           <p>
-            <span>D</span>idirikan pada tahun 2022 oleh Dia'uddin Maulidi, wirausaha muda yang memulai bisnis kebab dari mengoperasikan gerobak kecil di Jalan Cut Nyak Dien, Lombok Timur. Memulai
-            bisnis Kebab pertama dengan modal 4 juta rupiah yang dipinjam dari bapaknya. Tahun 2023 sampai sekarang, Kebab Golden ini semakin berkembang pesat hingga akhirnya mampu membuat banyak
-            cabang di berbagai tempat di Lombok, dan mulai memfranchisekan bisnis kebab ini. Kebab adalah salah satu makanan cepat saji paling populer di seluruh dunia tetapi masih belum ada pemain
-            global dalam bisnis kebab, Tim Kebab Golden memiliki ambisi untuk mengubahnya. Kebab Golden terus berekspansi hingga dapat membuka berbagai cabang di kota lainnya di Indonesia.
+            <span>K</span>ebab Golden didirikan pada tahun 2010 oleh pasangan suami istri, Budi dan Ani, yang memiliki kecintaan yang mendalam terhadap kuliner Timur Tengah. Berawal dari sebuah gerai
+            kecil di sudut kota, Kebab Golden kini telah berkembang menjadi salah satu merek kebab terkemuka di Indonesia. Keberhasilan kami tidak lepas dari komitmen untuk menyajikan kebab
+            berkualitas tinggi dengan cita rasa autentik yang memanjakan lidah para pelanggan. Awalnya, Budi dan Ani hanya bermodalkan resep keluarga yang telah diwariskan turun temurun. Dengan kerja
+            keras dan dedikasi, mereka berhasil memikat hati para pecinta kuliner dengan kebab yang lezat dan bumbu yang kaya rasa. Dalam waktu singkat, gerai kecil mereka mulai dikenal luas dan
+            menjadi destinasi favorit bagi pencinta kebab.
           </p>
         </div>
         <div class="d-flex gap-4 rataTengah">
           <p>
-            Saat ini Kebab Golden memiliki lebih dari 10 outlet di seluruh Lombok. Kebab Golden telah mendapatkan banyak pelanggan, pendapatan setiap bulan selalu meningkat. Kepercayaan pelanggan
-            tentunya bukan didapatkan dengan mudah, itu semua didapat dari hasil kerjasama tim.
+            Dalam perjalanan ekspansinya, Kebab Golden selalu menjaga kualitas dan konsistensi rasa. Setiap bahan yang digunakan dipilih dengan teliti, memastikan kebab yang disajikan selalu segar dan
+            nikmat. Inovasi juga menjadi bagian penting dari sejarah kami, dengan terus menghadirkan varian kebab baru yang sesuai dengan selera pelanggan tanpa menghilangkan esensi kelezatan kebab
+            tradisional. Kini, dengan puluhan cabang di berbagai kota besar di Indonesia, Kebab Golden tetap mempertahankan semangat dan komitmen yang sama seperti ketika pertama kali didirikan. Kami
+            bangga bisa menjadi bagian dari momen-momen bahagia pelanggan kami, menyajikan kebab yang tidak hanya mengenyangkan, tetapi juga memberikan pengalaman kuliner yang berkesan.
           </p>
-          <img src="./img/kebab_shop2.jpg" class="w-50 rounded-3" alt="kebab shop2" />
+          <img src="./img/kebab_shop2.jpg" class="rounded-3 me-4" width="40%" alt="kebab shop2" />
         </div>
       </article>
     </section>
-    <!-- akhir about -->
+    <!-- akhir about sejarah -->
+
+    <!-- awal about visi & misi -->
+    <section class="about mb-5" id="visiMisi">
+      <h2 class="text-center mb-5">Visi & Misi Kebab Golden</h2>
+      <article class="container">
+        <div class="text rataTengah d-flex gap-4 mb-5">
+          <div class="visi">
+            <h4>Visi</h4>
+            <p>
+              1. Menjadi Merek Kebab Terbaik di Indonesia: <br />
+              Kebab Golden bercita-cita menjadi merek kebab yang paling dikenal dan dihargai di seluruh Indonesia. Kami ingin setiap orang merasakan kebab yang lezat dan berkualitas tinggi setiap kali
+              mereka mengunjungi gerai kami. <br />
+              2. Ekspansi Internasional: <br />
+              Kami memiliki visi untuk membawa cita rasa kebab Golden ke kancah internasional. Dengan membuka cabang di berbagai negara, kami berharap dapat memperkenalkan kelezatan kebab khas kami
+              kepada lebih banyak orang di seluruh dunia. <br />
+              3. Inovasi Berkelanjutan: <br />
+              Kami berkomitmen untuk terus berinovasi dalam setiap aspek bisnis kami, dari produk hingga pelayanan. Dengan mengikuti tren kuliner dan teknologi terbaru, kami ingin memastikan Kebab
+              Golden selalu relevan dan menjadi pilihan utama pelanggan.<br />
+            </p>
+          </div>
+          <div class="misi">
+            <h4>Misi</h4>
+            <p>
+              1. Menyajikan Kebab Berkualitas Tinggi: <br />
+              Kami berkomitmen untuk selalu menyajikan kebab dengan kualitas terbaik, menggunakan bahan-bahan segar dan pilihan yang diolah dengan standar kebersihan dan kelezatan yang tinggi. Setiap
+              gigitan kebab Golden adalah cerminan dari dedikasi kami terhadap kualitas.<br />
+              2. Memberikan Pelayanan Terbaik: <br />
+              Pelanggan adalah prioritas utama kami. Kami berusaha memberikan pengalaman kuliner yang menyenangkan dengan pelayanan yang ramah, cepat, dan profesional. Kepuasan pelanggan adalah
+              motivasi utama kami untuk terus berinovasi dan meningkatkan layanan.<br />
+              3. Mengembangkan Inovasi Produk: <br />
+              Kami terus mengembangkan varian produk baru yang kreatif dan inovatif untuk memenuhi selera dan kebutuhan pelanggan yang beragam. Dengan memadukan cita rasa Timur Tengah dan lokal, kami
+              berharap dapat menghadirkan kebab yang unik dan lezat.<br />
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- akhir about visi & misi -->
+
+    <!-- awal product -->
+    <section class="container product" id="product">
+      <div class="judul">
+        <h2 class="text-center">Product Kebab Golden</h2>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="imageProduct m-4">
+          <div class="cardShow rounded-3" style="width: 18rem">
+            <img id="product-image" src="./img/adana-kebab2.jpg" alt="Adana Kebab" />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Adana Kebab</h6>
+            <p class="card-text">Rp.10.000</p>
+          </div>
+        </div>
+        <div class="imageProduct m-4">
+          <div class="cardShow rounded-3" style="width: 18rem">
+            <img id="product-image" src="./img/Alinazik-Kebab.jpg" alt="Adana Kebab" />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Alinazik Kebab</h6>
+            <p class="card-text">Rp.20.000</p>
+          </div>
+        </div>
+        <div class="imageProduct m-4">
+          <div class="cardShow rounded-3" style="width: 18rem">
+            <img id="product-image" src="./img/doner_kebab.jpg" alt="Adana Kebab" />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Doner Kebab</h6>
+            <p class="card-text">Rp.22.000</p>
+          </div>
+        </div>
+        <div class="imageProduct m-4">
+          <div class="cardShow rounded-3" style="width: 18rem">
+            <img id="product-image" src="./img/shish-kebab.jpg" alt="Adana Kebab" />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Shish Kebab</h6>
+            <p class="card-text">Rp.18.500</p>
+          </div>
+        </div>
+        <div class="imageProduct m-4">
+          <div class="cardShow rounded-3" style="width: 18rem">
+            <img id="product-image" src="./img/chapli.jpg" alt="Adana Kebab" />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Chapli Kebab</h6>
+            <p class="card-text">Rp.21.500</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir product -->
+
+    <!-- contact awal -->
+    <section class="kontak container" id="kontak">
+      <div class="judul mb-5">
+        <h2 class="text-center">Kontak Kebab Golden</h2>
+      </div>
+      <div class="isi">
+        <div class="mapp">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.491468896782!2d116.52198497363368!3d-8.644718591402071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc4eafc18a6227%3A0x54525d33a0043ca7!2sPancor%20Bermi%20RT%2030!5e0!3m2!1sid!2sid!4v1692963296173!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
+        <div class="row col-md-6 ms-3 p-2">
+          <form>
+            <div class="mb-1">
+              <label for="nama" class="form-label">Nama: </label>
+              <input type="text" class="form-control" id="nama" />
+            </div>
+            <div class="mb-1">
+              <label for="email" class="form-label">Email: </label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="noHP" class="form-label">No HP</label>
+              <input type="number" class="form-control" id="noHp" />
+            </div>
+            <button type="submit" class="btn btn-primary buttonTombol">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact akhir -->
+
+    <!-- awal footer -->
+    <footer class="bg-warning">
+      <div class="sosial d-flex gap-3 justify-content-center">
+        <a href="https://www.instagram.com/_muichiro__/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://web.facebook.com/kkaxa.adek/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://x.com/DiauddinMaulidi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+
+      <div class="createdBy">
+        <p>Created By <a href="https://github.com/DiauddinMaulidi" target="_blank" class="textLink">Dia'UddinMaulidi</a>. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- akhir footer -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <script src="index.js"></script>
   </body>
 </html>

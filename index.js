@@ -1,5 +1,6 @@
 let bgNavbar = document.getElementById("bgNavbar");
 let colorText = document.querySelectorAll("ul li a");
+let productImg = document.querySelector(".product .imageProduct .card img");
 // colorText.forEach((item) => {
 //   item.style.color = "#ffdb00";
 // });
